@@ -61,6 +61,7 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
+
 h1 {
   white-space: pre-line;
 }
@@ -96,13 +97,9 @@ p {
   background-size: cover;
 }
 
-/*--------------------------row------------------------*/
-
 .nav-page-promo {
   margin-bottom: 40px;
 }
-
-/*-------------------------col--------------------*/
 
 .nav-column {
   margin-bottom: 116px;
@@ -144,8 +141,7 @@ p {
 .item-button-left:hover {
   color: #ff4e50;
   transition: color 0.2s linear;
-  
- }
+}
 
 .item-button-left:hover::after {
   opacity: 1;
@@ -168,11 +164,6 @@ p {
   visibility: hidden;
 }
 
-/*-----------------------col--------------------*/
-
-.nav-page-promo-logotype {
-}
-
 .nav-page-promo-logotype-link {
   display: block;
   width: max-content;
@@ -188,19 +179,12 @@ p {
   transition: color 0.2s linear;
 }
 
-/*--------------------------row--------------------*/
-
-.hero-wraper {
-}
-
-/*------------------------col-------------------*/
-
 .hero {
   text-align: center;
 }
 
 .hero-title {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: 'Montserrat';
   font-size: 1.75rem;
   font-weight: 700;
@@ -209,7 +193,7 @@ p {
 }
 
 .hero-text {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-family: 'Roboto';
   font-size: 1.0625rem;
   font-weight: 300;
@@ -217,7 +201,7 @@ p {
 }
 
 .hero-button {
-  padding: 8px 40px;  
+  padding: 8px 20px;  
   background-color: rgb( 255, 78, 80 );
   border: none;
   border-radius: 20px;
@@ -233,23 +217,15 @@ p {
   background-color: rgb(255, 5, 9);
   transition: background-color 0.2s linear;  
 }
+
 /*----------------------main----------------------*/
 
 .main {
-padding: 70px 0 57px 0;
+  padding: 70px 0 57px 0;
 }
-
-/*-------------------------row-----------------------*/
-
-.page-partners-wraper {
-  
-}
-
-/*------------------------col------------------*/
 
 .page-partners-wraper-title {
   margin-bottom: 18px;
-    
 }
 
 .page-partners-wraper-title-text {
@@ -263,24 +239,18 @@ padding: 70px 0 57px 0;
   text-transform: none;
 }
 
-/*-----------------------col----------------------*/
-
 .page-partners-card {
   margin-bottom: 30px;
 }
 
 .page-partners-card-list {
   text-align: center;
-
+  margin-bottom: 40px;
 }
 
 .page-partners-card-list-item {
   margin: 0 auto;
   width: 220px;
-}
-
-.page-partners-card-list-item:not(:last-child) {
-  margin-bottom: 30px;
 }
 
 .partners-item-photo {
@@ -345,12 +315,6 @@ padding: 70px 0 57px 0;
   color: #666666;
 }
 
-/*-----------------------col----------------------*/
-
-.partners-item-button {
-
-}
-
 .partners-item-button-link {
   display: block;
   margin: 0 auto;
@@ -375,4 +339,100 @@ padding: 70px 0 57px 0;
 }
 
 /*-----------------------media------------------*/
+
+@media screen and (max-width: 767px) {
+  .page-partners-card-list-item:not(:last-child) {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .header {
+    background-image: url(../image/tablet-img.png);
+    padding: 40px 0 234px 0;
+  }
+
+  .nav-page-promo-list{
+    justify-content: flex-end;
+  }
+
+  .hero-title {
+    font-size: 3.2481rem;
+  }
+
+  .hero-text {
+    font-size: 1.4994rem;
+  }
+
+  .hero-button {
+    font-size: 0.8744rem;
+    padding: 14px 20px;
+  }
+
+  .main {
+    padding: 70px 0 40px 0;
+  }
+
+  .page-partners-wraper-title {
+    margin-bottom: 30px;
+  } 
+
+  .page-partners-card-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .page-partners-card-list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 60px;
+  }
+
+  .partners-item-button {
+    font-size: 0.8738rem;
+    padding: 10px 30px;
+  }
+}
+
+@media (max-width: 992px) {
+  .page-partners-card-list-item:not(:nth-last-child(-n+2)) {
+    margin-bottom: 60px;
+  }
+}
+
+@media (min-width: 992px) {
+  .header {
+    padding: 46px 0 234px 0;
+    background-image: url(../image/desktop-img.png);
+  }
+
+  .hero-title {
+    font-size: 3.25rem;
+  }
+
+  .hero-text {
+    font-size: 1.5rem;
+  }
+
+  .hero-button {
+    font-size: 0.875rem;
+    padding: 14px 24px;
+  }
+
+  .main {
+    padding: 70px 0px;
+  }
+
+  .page-partners-card-list {
+    flex-wrap: nowrap;
+  }
+
+  .page-partners-card-list-item:nth-child(n) {
+    margin-bottom: 0;
+  }
+
+  .partners-item-button {
+    font-size: 0.875rem;
+  }
+}
+
+
 
