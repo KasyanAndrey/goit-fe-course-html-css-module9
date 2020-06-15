@@ -47,17 +47,32 @@ body {
   line-height: 1.2;
 }
     
-ul,
-li {
+ul, li {
   list-style: none;
 }
     
 img {
   display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
-
+    
+a {
+  text-decoration: none;
+  text-transform: uppercase;
+}
+h1 {
+  white-space: pre-line;
+}
+    
+h2, h3 {
+  text-transform: uppercase;
+}
+  
+p {
+  text-transform: none;
+}
+  
 .visually-hidden {
   position: absolute;
   white-space: nowrap;
@@ -71,5 +86,293 @@ img {
   margin: -1px;
 }
 
-/*------------------------header-------------------*/
+/*--------------------header-------------------------*/
+
+.header {
+  padding: 20px 0 140px 0;
+  background-color: #000000;
+  background-image: url(../image/mobile-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/*--------------------------row------------------------*/
+
+.nav-page-promo {
+  margin-bottom: 40px;
+}
+
+/*-------------------------col--------------------*/
+
+.nav-column {
+  margin-bottom: 116px;
+}
+
+.nav-page-promo-list {
+  display: flex;
+  justify-content: center;
+}
+
+.nav-page-promo-list-item:not(:last-child) {
+  margin-right: 20px;
+}
+
+.nav-page-promo-list-item-button {
+  border: none;
+  outline: none;  
+  background-color: transparent;
+  cursor: pointer;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  position: relative;
+}
+
+.item-button-rigth {
+  width: 90px;
+  padding: 10px;
+  border: 2px solid #ffffff;
+  border-radius: 20px;
+}
+
+.item-button-rigth:hover {
+  background-color: #ff4e50;
+  transition: background-color 0.2s linear;
+}
+
+.item-button-left:hover {
+  color: #ff4e50;
+  transition: color 0.2s linear;
+  
+ }
+
+.item-button-left:hover::after {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+} 
+
+.item-button-left::after {
+  content: "";
+  display: block;
+  background-color: #ff4e50;
+  width: 0%;
+  height: 3px;
+  bottom: -12px;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.2s linear;
+  opacity: 0;
+  visibility: hidden;
+}
+
+/*-----------------------col--------------------*/
+
+.nav-page-promo-logotype {
+}
+
+.nav-page-promo-logotype-link {
+  display: block;
+  width: max-content;
+  margin: 0 auto;
+  font-family: 'Montserrat';
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.nav-page-promo-logotype-link:hover {
+  color: #ff4e50;
+  transition: color 0.2s linear;
+}
+
+/*--------------------------row--------------------*/
+
+.hero-wraper {
+}
+
+/*------------------------col-------------------*/
+
+.hero {
+  text-align: center;
+}
+
+.hero-title {
+  margin-bottom: 20px;
+  font-family: 'Montserrat';
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.hero-text {
+  margin-bottom: 20px;
+  font-family: 'Roboto';
+  font-size: 1.0625rem;
+  font-weight: 300;
+  color: #ffffff;
+}
+
+.hero-button {
+  padding: 8px 40px;  
+  background-color: rgb( 255, 78, 80 );
+  border: none;
+  border-radius: 20px;
+  outline: none;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+.hero-button:hover {
+  background-color: rgb(255, 5, 9);
+  transition: background-color 0.2s linear;  
+}
+/*----------------------main----------------------*/
+
+.main {
+padding: 70px 0 57px 0;
+}
+
+/*-------------------------row-----------------------*/
+
+.page-partners-wraper {
+  
+}
+
+/*------------------------col------------------*/
+
+.page-partners-wraper-title {
+  margin-bottom: 18px;
+    
+}
+
+.page-partners-wraper-title-text {
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 1.3738rem;
+  font-weight: 700;
+  color: #333333;
+  text-transform: none;
+}
+
+/*-----------------------col----------------------*/
+
+.page-partners-card {
+  margin-bottom: 30px;
+}
+
+.page-partners-card-list {
+  text-align: center;
+
+}
+
+.page-partners-card-list-item {
+  margin: 0 auto;
+  width: 220px;
+}
+
+.page-partners-card-list-item:not(:last-child) {
+  margin-bottom: 30px;
+}
+
+.partners-item-photo {
+  display: block;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  position: relative;
+  width: 122px;
+  height: 122px;
+}
+
+.partners-item-photo::before {
+  content: '';
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  background-position: center;
+  background-repeat: no-repeat;
+  right: 0;
+  bottom: 0;
+  border: 4px solid #ffffff;
+  border-radius: 50%;
+}
+
+.partners-icon-bradley-hunter-man::before{
+  background-color: rgb( 255, 78, 80 );
+  background-image: url(../image/icon/tv.png); 
+}
+
+.partners-icon-lucas-marsha::before{
+  background-color: rgb( 255, 165, 7 );
+  background-image: url(../image/icon/flask.png);
+}
+
+.partners-icon-heather-walker::before{
+  background-color: rgb( 28, 215, 173 );
+  background-image: url(../image/icon/coffee.png); 
+}
+
+.partners-icon-bradley-hunter-girl::before{
+  background-color: rgb( 78, 115, 219 );
+  background-image: url(../image/icon/airplane.png); 
+}
+
+.partners-item-photo-img {
+  border-radius: 50%;
+}
+
+.partners-item-title {
+  padding-bottom: 16px;
+  font-family: 'Montserrat';
+  font-size: 0.8731rem;
+  font-weight: 700;
+  color: #333333;
+  text-transform: none;
+}
+
+.partners-item-text {
+  font-family: 'Roboto';
+  font-size: 0.8731rem;
+  font-weight: 300;
+  color: #666666;
+}
+
+/*-----------------------col----------------------*/
+
+.partners-item-button {
+
+}
+
+.partners-item-button-link {
+  display: block;
+  margin: 0 auto;
+  padding: 10px 50px;
+  width: 274px;
+  border: 2px solid rgb(255, 78, 80);
+  border-radius: 20px;  
+  cursor: pointer;
+  outline: none;
+  text-align: center;
+  font-family: 'Montserrat';
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ff4e50;
+  text-transform: none;
+}
+
+.partners-item-button-link:hover{
+  color: #ffffff;
+  background-color: rgb( 255, 78, 80 );
+  transition: background-color 0.2s linear;
+}
+
+/*-----------------------media------------------*/
 
